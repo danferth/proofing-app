@@ -1,0 +1,10 @@
+a{
+	color:darken(red,10%);
+	float:right;
+}
+.test{
+	background:linear-gradient (to top, black 0%, white 100%);
+	transform:skew(45deg);
+	display:flex;
+	font:bold 10px/45px sans-serif;
+}

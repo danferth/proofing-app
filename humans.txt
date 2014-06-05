@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Dan Klotz	|	Web Developer	|	@danferth
+    Coffee		|	Modivator		|	#caffeine
+
+# THANKS
+
+    Sublime Text 3
+    Grunt
+
+# TECHNOLOGY COLOPHON
+
+    HTML
+    CSS - from SCSS
+    jQuery
+    PHP
+    Grunt
+

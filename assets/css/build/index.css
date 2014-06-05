@@ -1,0 +1,18 @@
+/* line 1, ../sass/index.scss */
+a {
+  color: #cc0000;
+  float: right;
+}
+
+/* line 5, ../sass/index.scss */
+.test {
+  background: linear-gradient to top, black 0%, white 100%;
+  -webkit-transform: skew(45deg);
+  -ms-transform: skew(45deg);
+  transform: skew(45deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: bold 10px/45px sans-serif;
+}
