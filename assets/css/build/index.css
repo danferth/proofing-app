@@ -1,18 +1,125 @@
-/* line 1, ../sass/index.scss */
-a {
-  color: #cc0000;
-  float: right;
+/* line 2, ../sass/index.scss */
+.welcome {
+  height: 60px;
+  position: fixed;
+  top: 50%;
+}
+/* line 7, ../sass/index.scss */
+.welcome button {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 50px;
+  padding: 0;
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  text-align: center;
+  font: 400 12px/60px 'Open Sans',sans-serif;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+/* line 22, ../sass/index.scss */
+.welcome button:focus {
+  border-color: #4d4d4d;
+  outline: none;
+}
+/* line 26, ../sass/index.scss */
+.welcome button:hover {
+  background: rgba(230, 230, 230, 0.15);
+  border-color: transparent;
+  color: #cccccc;
+  outline: none;
+}
+/* line 32, ../sass/index.scss */
+.welcome button:active {
+  background: rgba(204, 204, 204, 0.25);
+}
+/* line 36, ../sass/index.scss */
+.welcome h1 {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  font: 800 30px/60px 'Open Sans',sans-serif;
+  text-shadow: 0 2px 0 #595959;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+}
+/* line 43, ../sass/index.scss */
+.welcome h1 span {
+  font-weight: 300;
 }
 
-/* line 5, ../sass/index.scss */
-.test {
-  background: linear-gradient to top, black 0%, white 100%;
-  -webkit-transform: skew(45deg);
-  -ms-transform: skew(45deg);
-  transform: skew(45deg);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font: bold 10px/45px sans-serif;
+/* line 49, ../sass/index.scss */
+.login {
+  width: 25%;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -12.5% 0 0 -12.5%;
+}
+/* line 56, ../sass/index.scss */
+.login h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 2px rgba(128, 128, 128, 0.5);
+  margin: 0;
+}
+/* line 62, ../sass/index.scss */
+.login form {
+  width: 100%;
+  padding: 0 2%;
+}
+/* line 65, ../sass/index.scss */
+.login form p {
+  margin: 0;
+}
+/* line 67, ../sass/index.scss */
+.login form p:nth-child(1) {
+  margin: 10px 0 10px 0;
+}
+/* line 70, ../sass/index.scss */
+.login form p:nth-child(2) {
+  margin: 0 0 3px 0;
+}
+/* line 74, ../sass/index.scss */
+.login form input {
+  width: 100%;
+}
+/* line 77, ../sass/index.scss */
+.login form input[type='text'], .login form input[type='password'] {
+  padding: 5px 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+/* line 83, ../sass/index.scss */
+.login form input[type='text']:focus, .login form input[type='password']:focus {
+  outline: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 88, ../sass/index.scss */
+.login form input[type='submit'] {
+  margin: 0 0 3px 0;
+  padding: 5px 0 10px 0;
+  border: none;
+  color: #666666;
+  text-transform: uppercase;
+}
+/* line 95, ../sass/index.scss */
+.login form label {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  padding: 3px 0 5px 12px;
+  text-transform: uppercase;
+}
+/* line 101, ../sass/index.scss */
+.login form label.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #666666;
 }
