@@ -61,10 +61,14 @@ The webApp will be written in `php` and incorporate a db.  `SESSIONS` will be us
 
 ####db users
 
+| 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|
 | id | user | salt | password *(salted & hashed)* | status *(visitor, editor, admin)* |
 
 ####db items
 
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|
 | id | title | short description | preview *(file jpeg)* | preview large *(PDF)* | print files *(URL from db to .ziped file)* | approval status *(0,1,2)* | ME approval status *(0,1)* | SE approval status *(0,1)* |
 
 ####index.php
