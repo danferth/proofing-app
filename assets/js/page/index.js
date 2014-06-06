@@ -17,6 +17,7 @@ $(document).ready(function(){
     var pass = $('input[name="pass"]').val();
     if (user == 'hello' && pass == 'password') {
       $('.login').fadeOut(650);
+      window.location.href = "/pages/list.php";
     }
     return false;
   });

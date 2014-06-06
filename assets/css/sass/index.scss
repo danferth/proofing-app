@@ -1,4 +1,12 @@
 //index.php custom css
+body{
+  background:#a5a5a5;
+  background:radial-gradient(circle at top center,
+    darken(white,40%) 0%,
+    darken(white,50%) 25%,
+    darken(white,55%) 50%,
+    darken(white,60%) 70%);
+}
 .welcome{
   height:60px;
   position:fixed;

@@ -33,6 +33,7 @@
          END IE9 pinned site -->
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
         <link type="text/plain" rel="author" href="/humans.txt">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/assets/css/build/global.css">
         <?php
         if(isset($this->currentPage['pageCSS']) && $this->currentPage['pageCSS'] != ""){

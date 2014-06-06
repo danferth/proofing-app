@@ -7,10 +7,79 @@ html, body{
   height:100%;
 }
 body{
-  background:#a5a5a5;
-  background:radial-gradient(circle at top center,
-    darken(white,40%) 0%,
-    darken(white,50%) 25%,
-    darken(white,55%) 50%,
-    darken(white,60%) 70%);
+	background:darken(white,10%); 
 }
+
+//approval marks---------------------
+$color: darken(white,75%);
+.app{
+  color:darken(white,60%);
+  text-shadow:0 1px 0 white;
+  font:400 15px/20px 'Ubuntu Mono', sans-serif;
+  margin:5px 0 10px 50px;  
+  position:relative;
+}
+.app0:before{
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:radial-gradient(rgba(white,.5) 0%, transparent 75%);
+  box-shadow:inset 0 0 1px 0 $color, 0 1px 0 0 white;
+  border-radius:10px;
+  margin:0 0 0 -30px;
+}
+.app1:before{
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:linear-gradient(to right, $color 0%, $color 50%, transparent 50%);
+  box-shadow:inset 0 0 1px 0 $color, 0 1px 0 0 white;
+  border-radius:10px;
+  margin:0 0 0 -30px;
+}
+.app2:before{
+  content:'';
+  position:absolute;
+  box-shadow:inset 0 0 1px 0 $color, 0 1px 0 0 white;
+  width:20px;
+  height:20px;
+  background:radial-gradient(lighten($color,15%)0%, $color 50%);
+  border-radius:10px;
+  margin:0 0 0 -30px;
+}
+
+.app0C:before{
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:radial-gradient(rgba(red,.2) 0%, transparent 75%);
+  box-shadow:inset 0 0 1px 0 $color, 0 1px 0 0 white;
+  border-radius:10px;
+  margin:0 0 0 -30px;
+}
+.app1C:before{
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:linear-gradient(to right, #f48e00 0%, #f48e00 50%, transparent 50%);
+  box-shadow:inset 0 0 1px 0 $color, 0 1px 0 0 white;
+  border-radius:10px;
+  margin:0 0 0 -30px;
+}
+.app2C:before{
+  content:'';
+  position:absolute;
+  box-shadow:inset 0 0 1px 0 $color, 0 1px 0 0 white;
+  width:20px;
+  height:20px;
+  background:radial-gradient(lighten(#00c151,15%)0%, #00c151 50%);
+  border-radius:10px;
+  margin:0 0 0 -30px;
+}
+.app0C{color:darken(red,20%); font-weight:700;}
+.app1C{color:darken(#f48e00,10%);}
+.app2C{color:darken(#00c151,10%);}

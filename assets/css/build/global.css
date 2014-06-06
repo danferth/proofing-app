@@ -564,7 +564,108 @@ html, body {
 
 /* line 9, ../sass/global.scss */
 body {
-  background: #a5a5a5;
-  background: -webkit-radial-gradient(circle at top center, #999999 0%, gray 25%, #737373 50%, #666666 70%);
-  background: radial-gradient(circle at top center, #999999 0%, gray 25%, #737373 50%, #666666 70%);
+  background: #e6e6e6;
+}
+
+/* line 15, ../sass/global.scss */
+.app {
+  color: #666666;
+  text-shadow: 0 1px 0 white;
+  font: 400 15px/20px 'Ubuntu Mono', sans-serif;
+  margin: 5px 0 10px 50px;
+  position: relative;
+}
+
+/* line 22, ../sass/global.scss */
+.app0:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: -webkit-radial-gradient(rgba(255, 255, 255, 0.5) 0%, transparent 75%);
+  background: radial-gradient(rgba(255, 255, 255, 0.5) 0%, transparent 75%);
+  box-shadow: inset 0 0 1px 0 #404040, 0 1px 0 0 white;
+  border-radius: 10px;
+  margin: 0 0 0 -30px;
+}
+
+/* line 32, ../sass/global.scss */
+.app1:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: -webkit-linear-gradient(left, #404040 0%, #404040 50%, transparent 50%);
+  background: linear-gradient(to right, #404040 0%, #404040 50%, transparent 50%);
+  box-shadow: inset 0 0 1px 0 #404040, 0 1px 0 0 white;
+  border-radius: 10px;
+  margin: 0 0 0 -30px;
+}
+
+/* line 42, ../sass/global.scss */
+.app2:before {
+  content: '';
+  position: absolute;
+  box-shadow: inset 0 0 1px 0 #404040, 0 1px 0 0 white;
+  width: 20px;
+  height: 20px;
+  background: -webkit-radial-gradient(#666666 0%, #404040 50%);
+  background: radial-gradient(#666666 0%, #404040 50%);
+  border-radius: 10px;
+  margin: 0 0 0 -30px;
+}
+
+/* line 53, ../sass/global.scss */
+.app0C:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: -webkit-radial-gradient(rgba(255, 0, 0, 0.2) 0%, transparent 75%);
+  background: radial-gradient(rgba(255, 0, 0, 0.2) 0%, transparent 75%);
+  box-shadow: inset 0 0 1px 0 #404040, 0 1px 0 0 white;
+  border-radius: 10px;
+  margin: 0 0 0 -30px;
+}
+
+/* line 63, ../sass/global.scss */
+.app1C:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: -webkit-linear-gradient(left, #f48e00 0%, #f48e00 50%, transparent 50%);
+  background: linear-gradient(to right, #f48e00 0%, #f48e00 50%, transparent 50%);
+  box-shadow: inset 0 0 1px 0 #404040, 0 1px 0 0 white;
+  border-radius: 10px;
+  margin: 0 0 0 -30px;
+}
+
+/* line 73, ../sass/global.scss */
+.app2C:before {
+  content: '';
+  position: absolute;
+  box-shadow: inset 0 0 1px 0 #404040, 0 1px 0 0 white;
+  width: 20px;
+  height: 20px;
+  background: -webkit-radial-gradient(#0fff73 0%, #00c151 50%);
+  background: radial-gradient(#0fff73 0%, #00c151 50%);
+  border-radius: 10px;
+  margin: 0 0 0 -30px;
+}
+
+/* line 83, ../sass/global.scss */
+.app0C {
+  color: #990000;
+  font-weight: 700;
+}
+
+/* line 84, ../sass/global.scss */
+.app1C {
+  color: #c17000;
+}
+
+/* line 85, ../sass/global.scss */
+.app2C {
+  color: #008e3c;
 }
