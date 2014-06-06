@@ -1,6 +1,6 @@
 Thomson PROOFS webApp
 ----------
-__________________
+
 #The Front End
 
 ###Welcome/Log in
@@ -53,7 +53,7 @@ _____________________________________
 ##The Backend
 The webApp will be written in `php` and incorporate a db.  `SESSIONS` will be used to keep track of who is viewing...
 
-####Anticipated `SECCION` variables
+####Anticipated `SESSION` variables
 
 - SESSION[**NAME**]
 - SESSION[**STATUS (visitor, editor, admin)**]
@@ -61,23 +61,11 @@ The webApp will be written in `php` and incorporate a db.  `SESSIONS` will be us
 
 ####db users
 
-- id
-- user
-- salt
-- password *(salted & hashed)*
-- status *(visitor, editor, admin)*
+| id | user | salt | password *(salted & hashed)* | status *(visitor, editor, admin)* |
 
 ####db items
 
-- id
-- title
-- short description
-- preview *(file jpeg)*
-- preview large *(PDF)*
-- print files *(URL from db to .ziped file)*
-- approval status *(0,1,2)*
-- ME approval status *(0,1)*
-- SE approval status *(0,1)*
+| id | title | short description | preview *(file jpeg)* | preview large *(PDF)* | print files *(URL from db to .ziped file)* | approval status *(0,1,2)* | ME approval status *(0,1)* | SE approval status *(0,1)* |
 
 ####index.php
 - check if `SESSION active`
