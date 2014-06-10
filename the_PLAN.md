@@ -78,7 +78,7 @@ The webApp will be written in `php` and incorporate a db.  `SESSIONS` will be us
     - add user salt to supplied password and hash and compare
     - if passed redirect to list view
 
-```php
+```PHP
 if (SESSION active) {
     redirect to list view;
 }else {
@@ -105,7 +105,71 @@ if ($supplied-username == true) {
     } else {
     display error message;
     }
+```
 
+####list-view.php
+- check if `SESSION active`
+- query db for all items
+- display items in list form
+- click list item to display item view
 
+```PHP
+if (SESSION active) {
+    open connection to db;
+    query db for ALL items;
+    display items list;
 
+    <li>
+        <p class=""</p>
+        <a href="item-view.php?=id-of-item" >Title-of-item</a>
+    </li>
+}else {
+    redirect to index.php;
+}
+```
+
+####item-view.php
+- check if `SESSION active`
+- query db for item with id from url query *(http://proofs.com/item-view.php?=23)*
+- display item information
+- have link for editing item
+
+```
+if (SESSION active) {
+    open connection to db;
+    query ID of item from url query;
+    display information on item;
+    
+    <div class="view">
+    dispaly of item information;
+    </div>
+    link to edit.php?=id-of=item
+    link to list-view.php
+    
+}else {
+    redirect to index.php;
+}
+```
+
+####edit-item.php
+- check if `SESSION active`
+- query db for item with id from url query *(http://proofs.com/edit-item.php?=23)*
+- display item information
+- have link for saving or canceling
+
+```
+if (SESSION active) {
+    open connection to db;
+    query ID of item from url query;
+    display information on item in form inputs for editing;
+    
+    <div class="view">
+    display of item information in form inputs;
+    </div>
+    link to save item;
+    link to cancel edit;
+    
+}else {
+    redirect to index.php;
+}
 ```
